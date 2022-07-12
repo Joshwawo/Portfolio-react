@@ -6,7 +6,7 @@ const Data = () => {
       id: 1,
       nombre: "Trubute Page",
       tecnologia: "HTML Y CSS",
-      descripcion: 'Pagina TWributo al Dr. Norman Boring, hecha con HTML Y CSS.',
+      descripcion: 'Pagina TWributo al Dr. Norman Boring, hecha con HTML Y CSS',
       link: 'https://codepen.io/Joshwawo/pen/NWXbbLw',
       img: 'https://i.ibb.co/rfg8M2Z/Captura-de-pantalla-2022-03-24-212232.png'
     },
