@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .mauto{
     margin: 0 auto;
 }
+
+.pa-t{
+  padding-top: 3.5rem;
+}
+
+
+@layer base {
+    li {
+      @apply p-5 hover:text-green-300 hover:bg-zinc-50 md:hover:bg-white; 
+    }
+  }
+  

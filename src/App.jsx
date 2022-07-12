@@ -3,19 +3,30 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Data from "./components/Data";
-import Pruebas from "./components/Pruebas";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Contacto from "./pages/Contacto";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="">
+    <>
 
+      <BrowserRouter>
       <Navbar/>
-      <Data/>
-      {/* <Pruebas/> */}
+      <Routes>
+        <Route path="/"  >
+          <Route index element={<HomePage/>} />
+          <Route path="/contacto" element={<Contacto/>} />
+
+        </Route>
+      </Routes>
       
-    </div>
+      </BrowserRouter>
+      
+      
+    </>
   );
 }
 
