@@ -13,7 +13,6 @@ const Navbar = () => {
       <div className=" w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg">
         <div className="px-2 flex justify-between items-center w-full h-full">
           <NavLink to="/">
-            {/* <img src="" alt="Logo Promopixeles" /> */}
             <p className="font-bold uppercase">Jorge Morales</p>
           </NavLink>
           <div className="flex items-center font-bold">

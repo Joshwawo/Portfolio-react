@@ -8,7 +8,9 @@ import node from "../img/nodejs.webp";
 import php from "../img/php.webp";
 import taiwindcss from "../img/tailwindcss.webp";
 import express from "../img/express.webp";
-import styled from "../img/stlyedComponents.png";
+import git from "../img/git.webp";
+import mysql from "../img/mysql.webp";
+
 const Skills = () => {
   const [hola, setHola] = useState("");
 
@@ -65,76 +67,107 @@ const Skills = () => {
         id: 3,
       },
     ],
+    basesDeDatos: [
+      {
+        skill: "MySQL",
+        ico: mysql,
+        id: 1,
+      },
+    ],
+    otros: [
+      {
+        skill: "GIT",
+        ico: git,
+        id: 1,
+      },
+    ],
   };
 
-
   return (
-   
-      <div className=" md:flex justify-center items-center ">
-        <div className="md:w-1/2 bg-green-200 py-32 ">
-          <h2 className="text-center py-2 font-bold  justify-center items-center text-2xl md:text-4xl ">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("Hola, Soy Jorge  Morales ")
-                  .callFunction(() => {})
-                  .pauseFor(1000)
-                  .typeString("Web Development 😀")
-                  .callFunction(() => {})
-                  .start();
-              }}
-            />
-          </h2>
+    <div className=" md:flex justify-center items-center ">
+      <div className="md:w-1/2 bg-green-200 py-32 ">
+        <h2 className="text-center py-2 font-bold  justify-center items-center text-2xl md:text-4xl ">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hola, Soy Jorge  Morales ")
+                .callFunction(() => {})
+                .pauseFor(1000)
+                .typeString("Web Development 😀")
+                .callFunction(() => {})
+                .start();
+            }}
+          />
+        </h2>
 
-          <p className=" text-center font-semibold">{hola}</p>
-        </div>
+        <p className=" text-center font-semibold">{hola}</p>
+      </div>
 
-        <div className="md:w-1/2  md:py-32 m-2">
-          <h2 className="text-center py-2 font-bold  justify-center items-center text-xl uppercase">
-            Estas son algunas de mis skills
-          </h2>
+      <div className="md:w-1/2  md:py-32 m-2">
+        <h2 className="text-center py-2 font-bold  justify-center items-center text-xl uppercase">
+          Estas son algunas de mis skills
+        </h2>
 
-          <div className="flex w-full justify-around items-center ">
+        <div className="flex w-full justify-around items-center ">
           <h3 className=" text-2xl py-5 w-1/2 px-1 md:px-7">FrontEnd</h3>
-            {allSkills.frontend.map(({ ico, id, skill }) => {
-              return <img key={id} src={ico} alt={skill} className="w-auto h-[2rem]" />;
+          {allSkills.frontend.map(({ ico, id, skill }) => {
+            return (
+              <img key={id} src={ico} alt={skill} className="w-auto h-[2rem]" />
+            );
+          })}
+        </div>
+        <div className="backend">
+          <div className="flex justify-evenly items-center">
+            <h3 className=" text-2xl py-5   w-1/2 ">BackEnd</h3>
+            {allSkills.backend.map(({ ico, id, skill }) => {
+              return (
+                <img
+                  src={ico}
+                  key={id}
+                  alt={skill}
+                  className=" w-auto h-[3.1rem] px-3"
+                />
+              );
             })}
           </div>
-          <div className="backend">
-            <div className="flex justify-evenly items-center">
-            <h3 className=" text-2xl py-5   w-1/2 ">BackEnd</h3>
-              {allSkills.backend.map(({ ico, id, skill }) => {
-                return (
-                  <img
-                    src={ico}
-                    key={id}
-                    alt={skill}
-                    
-                    className=" w-auto h-[3.1rem] px-3"
-                  />
-                );
-              })}
-            </div>
-          </div>
-          <div className="">
-            <div className="frameworks flex justify-evenly items-center">
+        </div>
+        <div className="">
+          <div className="frameworks flex justify-evenly items-center">
             <h3 className="  text-2xl w-1/2 ">Frameworks</h3>
-              <img
-                src={allSkills.frameworks[0].ico}
-                className="w-auto h-[4rem] px-2"
-                alt=""
-              />
-              <img
-                src={allSkills.frameworks[1].ico}
-                className="w-auto h-[3rem] px-2"
-                alt=""
-              />
-            </div>
+            <img
+              src={allSkills.frameworks[0].ico}
+              className="w-auto h-[4rem] px-2"
+              alt=""
+            />
+            <img
+              src={allSkills.frameworks[1].ico}
+              className="w-auto h-[3rem] px-2"
+              alt=""
+            />
           </div>
         </div>
-        <img src={styled} alt="" />
+        <div className="">
+          <div className="frameworks flex justify-evenly items-center">
+            <h3 className="  text-2xl w-1/2 ">Bases de datos</h3>
+            <img
+              src={allSkills.basesDeDatos[0].ico}
+              className="w-auto h-[3rem] px-2"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="">
+          <div className="frameworks flex justify-evenly items-center">
+            <h3 className="  text-2xl w-1/2 ">Bases de datos</h3>
+            <img
+              src={allSkills.otros[0].ico}
+              className="w-auto h-[3rem] px-2"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-    
+    </div>
   );
 };
 
