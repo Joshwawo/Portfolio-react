@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../components/Card'
 import Data from '../components/Data'
 import Skills from '../components/Skills'
 import Top from '../components/Top'
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Top/>
       <Skills/>
       <Data/>
+      {/* <Card/> */}
 
     </div>
   )

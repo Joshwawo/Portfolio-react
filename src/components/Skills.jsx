@@ -23,46 +23,46 @@ const Skills = () => {
   const allSkills = {
     frontend: [
       {
-        skill: "HTML",
+        skill: "Html",
         ico: html,
         id: 1,
       },
       {
-        skill: "CSS",
+        skill: "Css",
         ico: css,
         id: 2,
       },
       {
-        skill: "JAVASCRIPT",
+        skill: "JavaScript",
         ico: js,
         id: 3,
       },
       {
-        skill: "REACT",
+        skill: "React",
         ico: react,
         id: 4,
       },
     ],
     backend: [
       {
-        skill: "NODE",
+        skill: "Node",
         ico: node,
         id: 1,
       },
       {
-        skill: "PHP",
+        skill: "php",
         ico: php,
         id: 2,
       },
     ],
     frameworks: [
       {
-        skill: "TAILWINDCSS",
+        skill: "Tailwindcss",
         ico: taiwindcss,
         id: 2,
       },
       {
-        skill: "EXPRESSJS",
+        skill: "ExpressJs",
         ico: express,
         id: 3,
       },
@@ -103,67 +103,94 @@ const Skills = () => {
         <p className=" text-center font-semibold">{hola}</p>
       </div>
 
-      <div className="md:w-1/2  md:py-32 m-2">
+      <div className="md:w-1/2  md:py-32 m-2 ">
         <h2 className="text-center py-2 font-bold  justify-center items-center text-xl uppercase">
           Estas son algunas de mis skills
         </h2>
+        <div className="container-50 ">
+          <div className=" flexo  mx-auto  ">
+            <h2 className=" ">FrontEnd</h2>
 
-        <div className="flex w-full justify-around items-center ">
-          <h3 className=" text-2xl py-5 w-1/2 px-1 md:px-7">FrontEnd</h3>
-          {allSkills.frontend.map(({ ico, id, skill }) => {
-            return (
-              <img key={id} src={ico} alt={skill} className="w-auto h-[2rem]" />
-            );
-          })}
-        </div>
-        <div className="backend">
-          <div className="flex justify-evenly items-center">
-            <h3 className=" text-2xl py-5   w-1/2 ">BackEnd</h3>
-            {allSkills.backend.map(({ ico, id, skill }) => {
-              return (
-                <img
-                  src={ico}
-                  key={id}
-                  alt={skill}
-                  className=" w-auto h-[3.1rem] px-3"
-                />
-              );
-            })}
+            <div className=" flex ">
+              {allSkills.frontend.map(({ ico, id, skill }) => {
+                return (
+                  
+                    <div key={id}>
+                      <img
+                        key={id}
+                        src={ico}
+                        alt={skill}
+                        className=" w-[30px] pl-2 mx-auto"
+                      />
+                      <p className=" text-sm pl-5">{skill}</p>
+                    </div>
+                  
+                );
+              })}
+            </div>
           </div>
-        </div>
-        <div className="">
-          <div className="frameworks flex justify-evenly items-center">
-            <h3 className="  text-2xl w-1/2 ">Frameworks</h3>
-            <img
-              src={allSkills.frameworks[0].ico}
-              className="w-auto h-[4rem] px-2"
-              alt=""
-            />
-            <img
-              src={allSkills.frameworks[1].ico}
-              className="w-auto h-[3rem] px-2"
-              alt=""
-            />
+          <div className=" flexo  mx-auto  pt-5">
+            <h2 className=" ">BackEnd</h2>
+
+            <div className=" flex">
+              {allSkills.backend.map(({ ico, id, skill }) => {
+                return (
+                  
+                   <div key={id}>
+                     <img
+                       key={id}
+                       src={ico}
+                       alt={skill}
+                       className=" w-[40px] pl-2 mx-auto"
+                     />
+                     <p className="text-sm pl-5">{skill}</p>
+                   </div>
+                  
+                );
+              })}
+            </div>
           </div>
-        </div>
-        <div className="">
-          <div className="frameworks flex justify-evenly items-center">
-            <h3 className="  text-2xl w-1/2 ">Bases de datos</h3>
-            <img
-              src={allSkills.basesDeDatos[0].ico}
-              className="w-auto h-[3rem] px-2"
-              alt=""
-            />
+          <div className=" flexo  mx-auto pt-5">
+            <h2 className=" ">Frameworks</h2>
+
+            <div className=" flex">
+              {allSkills.frameworks.map(({ ico, id, skill }) => {
+                return (
+                  
+                   <div key={id}>
+                     <img
+                       key={id}
+                       src={ico}
+                       alt={skill}
+                       className=" w-[35px] pl-2 mx-auto"
+                     />
+                     <p className="text-sm pl-5">{skill}</p>
+                   </div>
+                  
+                );
+              })}
+            </div>
           </div>
-        </div>
-        <div className="">
-          <div className="frameworks flex justify-evenly items-center">
-            <h3 className="  text-2xl w-1/2 ">Bases de datos</h3>
-            <img
-              src={allSkills.otros[0].ico}
-              className="w-auto h-[3rem] px-2"
-              alt=""
-            />
+          <div className=" flexo  mx-auto pt-5">
+            <h2 className=" ">Bases de datos</h2>
+
+            <div className=" flex">
+              {allSkills.basesDeDatos.map(({ ico, id, skill }) => {
+                return (
+                  
+                   <div key={id}>
+                     <img
+                       key={id}
+                       src={ico}
+                       alt={skill}
+                       className=" w-[40px] pl-2 mx-auto"
+                     />
+                     <p className="text-sm pl-5">{skill}</p>
+                   </div>
+                  
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

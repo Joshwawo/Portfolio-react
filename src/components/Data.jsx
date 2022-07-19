@@ -88,7 +88,7 @@ const Data = () => {
   return (
   
      <div className=" h-screen container mx-auto ">
-      <p className="text-center bg-yellow-200 font-semibold py-1">Trabajo en proceso</p>
+      <p className="text-center bg-yellow-400 font-semibold py-1">Trabajo en proceso</p>
          <p className="text-center font-bold text-2xl pb-10">Estos son unos de mis proyectos</p>
            <div className="sm:grid sm:grid-cols-2 sm:gap-4 md:grid-cols-4 md:gap-4">
            {Datas.map((data, index) => (
