@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -27,6 +28,43 @@ body{
   /* align-items: center;
   flex-wrap: wrap;
   flex-direction: column; */
+}
+.html{
+    color: #e34f26;
+}
+.css{
+    color: #2980b9;
+}
+.js{
+    color: #f1c40f;
+}
+.react{
+    color: #61DAFB;
+}
+.tailwind{
+    color: #1abc9c;
+}
+.bootstrap{
+    color: #563d7c;
+}
+/* ----------------------------------------------------- bg*/
+.html-bg{
+  background-color: #e34f26;
+}
+.css-bg{
+  background-color: #2980b9;
+}
+.js-bg{
+  background-color: #f1c40f;
+}
+.react-bg{
+  background-color: #61DAFB;
+}
+.tailwind-bg{
+  background-color: #1abc9c;
+}
+.bootstrap-bg{
+  background-color: #563d7c;
 }
 
 @layer base {

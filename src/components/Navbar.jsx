@@ -35,7 +35,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="contacto"
+                  to="projects"
                   className={({ isActive }) => (isActive ? "text-green-400" : "")}
                 >
                   Projects
@@ -82,7 +82,7 @@ const Navbar = () => {
           </li>
           <li className="border-b-2 border-white w-full">
           <NavLink
-            to="contacto"
+            to="proyects"
             onClick={handleClose}
             className={({ isActive }) => (isActive ? "text-green-300" : "")}
           >
