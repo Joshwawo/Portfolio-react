@@ -21,6 +21,11 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+.container-90{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
 
 .flexo {
   display: flex;
@@ -47,6 +52,13 @@ body{
 .bootstrap{
     color: #563d7c;
 }
+.jsondata{
+    color: #d1aa0d;
+}
+.php{
+    color: #8e44ad;
+}
+
 /* ----------------------------------------------------- bg*/
 .html-bg{
   background-color: #e34f26;
@@ -65,6 +77,9 @@ body{
 }
 .bootstrap-bg{
   background-color: #563d7c;
+}
+.jsondata-bg{
+  background-color: #dab10f6b;
 }
 
 @layer base {

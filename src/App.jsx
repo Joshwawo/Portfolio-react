@@ -18,9 +18,9 @@ function App() {
       <Routes>
         <Route path="/"  >
           <Route index element={<HomePage/>} />
-          <Route path="/contacto" element={<Contacto/>} />
 
         </Route>
+          <Route path="/contacto" element={<Contacto/>} />
       </Routes>
       
       </BrowserRouter>

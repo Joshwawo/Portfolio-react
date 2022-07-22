@@ -84,8 +84,8 @@ const Skills = () => {
   };
 
   return (
-    <div className=" md:flex justify-center items-center ">
-      <div className="md:w-1/2 bg-green-200 py-32 ">
+    <div className=" md:flex justify-center items-center container-90 ">
+      <div className="md:w-1/2 py-32 ">
         <h2 className="text-center py-2 font-bold  justify-center items-center text-2xl md:text-4xl ">
           <Typewriter
             onInit={(typewriter) => {
@@ -103,7 +103,7 @@ const Skills = () => {
         <p className=" text-center font-semibold">{hola}</p>
       </div>
 
-      <div className="md:w-1/2  md:py-32 m-2 ">
+      <div className="md:w-1/2   m-2 ">
         <h2 className="text-center py-2 font-bold  justify-center items-center text-xl uppercase">
           Estas son algunas de mis skills
         </h2>
