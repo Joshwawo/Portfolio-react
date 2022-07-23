@@ -8,7 +8,6 @@ import Contacto from "./pages/Contacto";
 import HomePage from "./pages/HomePage";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
