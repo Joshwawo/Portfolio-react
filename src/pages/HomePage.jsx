@@ -3,6 +3,7 @@ import React from 'react'
 import Proyectos from '../components/ProyectosTest'
 import Skills from '../components/Skills'
 import Top from '../components/Top'
+import Contacto from './Contacto'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       {/* <Data/> */}
       <Proyectos/>
       {/* <Card/> */}
+      <Contacto/>
 
     </div>
   )

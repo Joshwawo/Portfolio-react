@@ -109,7 +109,7 @@ const Skills = () => {
         </h2>
         <div className="container-50 ">
           <div className=" flexo  mx-auto  ">
-            <h2 className=" ">FrontEnd</h2>
+            <h2 className=" font-bold">FrontEnd</h2>
 
             <div className=" flex ">
               {allSkills.frontend.map(({ ico, id, skill }) => {
@@ -122,7 +122,7 @@ const Skills = () => {
                         alt={skill}
                         className=" w-[30px] pl-2 mx-auto"
                       />
-                      <p className=" text-sm pl-5">{skill}</p>
+                      <p className=" text-sm pl-5  uper">{skill}</p>
                     </div>
                   
                 );
@@ -130,7 +130,7 @@ const Skills = () => {
             </div>
           </div>
           <div className=" flexo  mx-auto  pt-5">
-            <h2 className=" ">BackEnd</h2>
+            <h2 className=" font-bold">BackEnd</h2>
 
             <div className=" flex">
               {allSkills.backend.map(({ ico, id, skill }) => {
@@ -151,7 +151,7 @@ const Skills = () => {
             </div>
           </div>
           <div className=" flexo  mx-auto pt-5">
-            <h2 className=" ">Frameworks</h2>
+            <h2 className=" font-bold">Frameworks</h2>
 
             <div className=" flex">
               {allSkills.frameworks.map(({ ico, id, skill }) => {
@@ -172,7 +172,7 @@ const Skills = () => {
             </div>
           </div>
           <div className=" flexo  mx-auto pt-5">
-            <h2 className=" ">Bases de datos</h2>
+            <h2 className=" font-bold">Bases de datos</h2>
 
             <div className=" flex">
               {allSkills.basesDeDatos.map(({ ico, id, skill }) => {

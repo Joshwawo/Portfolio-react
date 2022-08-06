@@ -113,6 +113,15 @@ const projects = [
       img: "https://cdn.discordapp.com/attachments/775393794186412073/999816086373539840/citas-react.png?width=832&height=468",
       
     },
+    {
+      id: 14,
+      nombre: "Pokeapp",
+      tecnologias: ["REACT", "TAILWIND","AXIOS" ],
+      descripcion: "App de pokemon, usando una api, genera un pokemon aleatorio y puedes buscar un pokemon",
+      link: "https://poke-app-fawn.vercel.app/",
+      img: "https://cdn.discordapp.com/attachments/775393794186412073/1005340778857513072/unknown.png",
+      
+    },
   ];
 
 

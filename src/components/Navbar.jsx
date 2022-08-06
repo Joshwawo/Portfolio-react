@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,42 +11,42 @@ const Navbar = () => {
     <div>
       <div className=" w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg">
         <div className="px-2 flex justify-between items-center w-full h-full">
-          <NavLink to="/">
+          <a href="/">
             <p className="font-bold uppercase">Jorge Morales</p>
-          </NavLink>
+          </a>
           <div className="flex items-center font-bold">
             <ul className="hidden md:flex">
               <li>
-                <NavLink
-                  to="/"
+                <a
+                  href="/"
                   className={({ isActive }) => (isActive ? "text-green-400" : "")}
                 >
                   Home
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="productos&servicios"
+                <a
+                  href="/"
                   className={({ isActive }) => (isActive ? "text-green-400" : "")}
                 >
                   About
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="projects"
+                <a
+                  href="/"
                   className={({ isActive }) => (isActive ? "text-green-400" : "")}
                 >
                   Projects
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="/contacto"
+                <a
+                  href="/"
                   className={({ isActive }) => (isActive ? "text-green-400" : "")}
                 >
                   Contact
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
@@ -61,42 +60,42 @@ const Navbar = () => {
           className={!nav ? "hidden" : "absolute text-center  bg-white w-full px-8 md:hidden"}
         >
            <li className="border-b-2 border-white w-full">
-          <NavLink
-            to="/"
+          <a
+            href="/"
             onClick={handleClose}
             className={({ isActive }) => (isActive ? "text-green-300 " : "")}
           >
            Home
-          </NavLink>
+          </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <NavLink
-            to="productos&servicios"
+          <a
+            href="#"
             onClick={handleClose}
             className={({ isActive }) => (isActive ? "text-green-300" : "")}
           >
             
             About
             
-          </NavLink>
+          </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <NavLink
-            to="proyects"
+          <a
+            href="#"
             onClick={handleClose}
             className={({ isActive }) => (isActive ? "text-green-300" : "")}
           >
           Projects
-          </NavLink>
+          </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <NavLink
-            to="/contacto"
+          <a
+            href="#"
             onClick={handleClose}
             className={({ isActive }) => (isActive ? "text-green-300" : "")}
           >
             Contact
-          </NavLink>
+          </a>
           </li>
         </ul>
       </div>

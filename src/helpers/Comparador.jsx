@@ -20,7 +20,9 @@ const Comparador = ({ children,i }) => {
           ? "bg-emerald-100"
           : children == "JSONSERVER"
           ? " jsondata-bg"
-          :""
+          : children == "AXIOS"
+          ? 'bg-purple-100'
+          : ''
       } `}
     >
       <span
@@ -39,7 +41,9 @@ const Comparador = ({ children,i }) => {
             ? "tailwind"
             : children == "JSONSERVER"
             ? "jsondata"
-            :''
+            : children == "AXIOS"
+            ? 'text-purple-400'
+            : ''
         }
       >
         #{children}
