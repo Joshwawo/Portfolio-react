@@ -19,7 +19,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className={({ isActive }) => (isActive ? "text-green-400" : "")}
+                  className={({ isActive }) =>
+                    isActive ? "text-green-400" : ""
+                  }
                 >
                   Home
                 </a>
@@ -27,7 +29,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className={({ isActive }) => (isActive ? "text-green-400" : "")}
+                  className={({ isActive }) =>
+                    isActive ? "text-green-400" : ""
+                  }
                 >
                   About
                 </a>
@@ -35,7 +39,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className={({ isActive }) => (isActive ? "text-green-400" : "")}
+                  className={({ isActive }) =>
+                    isActive ? "text-green-400" : ""
+                  }
                 >
                   Projects
                 </a>
@@ -43,59 +49,63 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className={({ isActive }) => (isActive ? "text-green-400" : "")}
+                  className={({ isActive }) =>
+                    isActive ? "text-green-400" : ""
+                  }
                 >
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-      
+
           <div className="md:hidden mr-4" onClick={handleClick}>
             {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
           </div>
         </div>
-      
+
         <ul
-          className={!nav ? "hidden" : "absolute text-center  bg-white w-full px-8 md:hidden"}
+          className={
+            !nav
+              ? "hidden"
+              : "absolute text-center  bg-white w-full px-8 md:hidden"
+          }
         >
-           <li className="border-b-2 border-white w-full">
-          <a
-            href="/"
-            onClick={handleClose}
-            className={({ isActive }) => (isActive ? "text-green-300 " : "")}
-          >
-           Home
-          </a>
+          <li className="border-b-2 border-white w-full">
+            <a
+              href="/"
+              onClick={handleClose}
+              className={({ isActive }) => (isActive ? "text-green-300 " : "")}
+            >
+              Home
+            </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <a
-            href="#"
-            onClick={handleClose}
-            className={({ isActive }) => (isActive ? "text-green-300" : "")}
-          >
-            
-            About
-            
-          </a>
+            <a
+              href="#"
+              onClick={handleClose}
+              className={({ isActive }) => (isActive ? "text-green-300" : "")}
+            >
+              About
+            </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <a
-            href="#"
-            onClick={handleClose}
-            className={({ isActive }) => (isActive ? "text-green-300" : "")}
-          >
-          Projects
-          </a>
+            <a
+              href="#"
+              onClick={handleClose}
+              className={({ isActive }) => (isActive ? "text-green-300" : "")}
+            >
+              Projects
+            </a>
           </li>
           <li className="border-b-2 border-white w-full">
-          <a
-            href="#"
-            onClick={handleClose}
-            className={({ isActive }) => (isActive ? "text-green-300" : "")}
-          >
-            Contact
-          </a>
+            <a
+              href="#"
+              onClick={handleClose}
+              className={({ isActive }) => (isActive ? "text-green-300" : "")}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

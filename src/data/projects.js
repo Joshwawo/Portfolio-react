@@ -3,7 +3,7 @@ const projects = [
       id: 1,
       nombre: "Tribute Page",
       tecnologias: ["HTML", "CSS"],
-      descripcion: "Pagina, para ver la tienda de fornite, consumiendo la API",
+      descripcion: "Pagina tributo para el Dr. Norman Borlaug",
       link: "https://codepen.io/Joshwawo/pen/NWXbbLw",
       img: "https://cdn.discordapp.com/attachments/775393794186412073/999460919459467365/tributo.png",
     },
@@ -22,7 +22,7 @@ const projects = [
       nombre: "Survey Form",
       tecnologias: ["HTML", "CSS"],
       descripcion:
-        "Practica hecha con  HTML Y CSS  consiste en hacer una documentacion de JavaScript. ",
+        "Survey Form, como reto de freecodecamp . ",
 
       link: "https://codepen.io/Joshwawo/pen/gOoLyqN",
       img: "https://cdn.discordapp.com/attachments/775393794186412073/999460919140692018/survey.png?width=832&height=468",
